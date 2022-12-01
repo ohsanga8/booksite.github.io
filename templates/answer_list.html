@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <title>이전 문답</title>
+  </head>
+  <body>
+    <div id="wrap" class="vh100">
+      <div class="page-wr on">
+        <p class="title">문답 내역</p>
+        <div class="answer_list">
+          {% if answer_list %}
+            <ul>
+              {% for answer in answer_list %}
+              <div class="answer_list">
+                {{ answer.question }}
+              </div>
+              {% endfor %}
+            </ul>
+          {% else %}
+            <p class="">운명의 문에 질문을 던져 보세요.</p>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
