@@ -6,14 +6,9 @@
   </head>
   <body>
       <div id="wrap" class="vh100">
-          <div id="header">
-          </div>
 
-          <div id="intro-page" class="on">
-            <p class="title">운명의 문</p>
-          </div>
-
-          <form method="post" name="question_form" id="question_form" action="">
+          <form action="{% url 'answer' %}" method="post" name="question_form" id="question_form">
+            {% csrf_token %}
             <div id="form-page">
               <div class="page-wr on">
                 <p class="title">무엇에 대한 답을 찾으십니까?</p>
@@ -32,12 +27,13 @@
                   </label>
                 </div>
               </div>
+              <a href="{% url 'answers' %}">이전 문답 확인</a>
 
               <div class="page-wr">
                 <p class="title">당신의 질문을 입력하세요</p>
                 <div class="content">
                   <input type="text" name="Q" id="Q">
-                  <input type="submit" name="submit_question" value="submit_question">
+                  <input type="submit" name="submit_question" value="제출">
                 </div>
               </div>
 

@@ -6,13 +6,13 @@
   </head>
   <body>
     <div id="wrap" class="vh100">
-      <form method="post" name="signup_form" id="signup_form" action="">
+      <form action="{% url 'signup' %}" method="POST" name="signup_form" id="signup_form">
+        {% csrf_token %}
         <div class="signup-page">
           <div class="page-wr on">
             <p class="title">당신의 이름은?</p>
             <div class="login">
                 <input type="text" name="username" id="username">
-                <input type="submit" name="submit_username" value="submit">
             </div>
           </div>
           <div class="page-wr">
