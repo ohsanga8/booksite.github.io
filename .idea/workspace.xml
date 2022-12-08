@@ -2,23 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="80710e33-4e0c-47c7-944b-e04d3d9da397" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/templates/form_errors.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/answer_data.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db_uploader.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/door/forms.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/apps.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/door/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/door/apps.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/common/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/common/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/door/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/door/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/door/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/door/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/door/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/door/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/common/signup.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/common/signup.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -36,12 +40,12 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\USER\OneDrive\바탕 화면\과제하는중\book\templates" />
