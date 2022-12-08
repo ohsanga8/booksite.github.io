@@ -6,8 +6,9 @@
   </head>
   <body>
     <div id="wrap" class="vh100">
-      <form action="{% url 'question' %}" method="post" name="login_form" id="login_form">
+      <form action="{% url 'login' %}" method="post" name="login_form" id="login_form">
         {% csrf_token %}
+        {% include "form_errors.html" %}
         <div class="login-page">
           <div class="page-wr on">
             <p class="title">당신의 이름은?</p>
@@ -18,7 +19,7 @@
           <div class="page-wr">
             <p class="title">비밀번호를 입력하세요.</p>
             <div class="login">
-                <input type="text" name="password" id="password">
+                <input type="password" name="password" id="password">
                 <input type="submit" name="submit_password" value="submit">
             </div>
           </div>
