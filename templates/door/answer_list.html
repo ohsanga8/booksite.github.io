@@ -12,9 +12,12 @@
           {% if answer_list %}
             <ul>
               {% for answer in answer_list %}
-              <div class="answer_list">
-                {{ answer.question }}
-              </div>
+                <div class="answer_list">
+                  <div>{{ answer.question.subject }}</div>
+                  <div>{{ answer.question.question }}</div>
+                  <div>{{ answer.content }}</div>
+                  <div>{{ answer.create_date }}</div>
+                </div>
               {% endfor %}
             </ul>
           {% else %}

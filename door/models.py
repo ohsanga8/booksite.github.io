@@ -1,23 +1,29 @@
 from django.db import models
+from django.utils import timezone
 
-class Answer(models.Model):
-    ANSWER_SUBJECTS =  [
-        ('LV', '사랑'),
-        ('MN', '금전'),
-        ('FT', '진로'),
-    ]
-    question = models.CharField(max_length=50)
-    subject = models.CharField(max_length=2, choices=ANSWER_SUBJECTS)
-    content = models.TextField()
-    create_date = models.DateField()
+#폼 모델
+class Question(models.Model):
+    subject = models.CharField(max_length=2)
+    question = models.TextField(null=True)
 
-class AnswerData(models.Model):
-    ANSWER_SUBJECTS =  [
-        ('LV', '사랑'),
-        ('MN', '금전'),
-        ('FT', '진로'),
-    ]
-    subject = models.CharField(max_length=2, choices=ANSWER_SUBJECTS)
+# 답변 데이터 저장
+class AnswerLove(models.Model):
     content = models.TextField()
     class Meta:
-        db_table = 'answer_data'
+        db_table = 'answer_love'
+
+class AnswerMoney(models.Model):
+    content = models.TextField()
+    class Meta:
+        db_table = 'answer_money'
+
+class AnswerFuture(models.Model):
+    content = models.TextField()
+    class Meta:
+        db_table = 'answer_future'
+
+#답변 모델
+class Answer(models.Model):
+    question= models.ForeignKey(Question, on_delete=models.CASCADE)
+    content = models.TextField()
+    create_date = models.DateField(default=0000-00-00)

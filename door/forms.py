@@ -1,7 +1,8 @@
 from django import forms
-from door.models import Answer
+from door.models import Question
+
 
 class QuestionForm(forms.ModelForm):
     class Meta:
-        model = Answer
-        fields = ['question', 'subject']
+        model = Question
+        fields = ['subject', 'question']

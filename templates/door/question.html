@@ -7,21 +7,21 @@
   <body>
       <div id="wrap" class="vh100">
 
-          <form action="{% url 'answer' %}" method="post" name="question_form" id="question_form">
+          <form action="{% url 'question_form' %}" method="post" name="question_form" id="question_form">
             {% csrf_token %}
             <div id="form-page">
               <div class="page-wr on">
                 <p class="title">무엇에 대한 답을 찾으십니까?</p>
                 <div class="subject">
-                  <input type="radio" name="love" id="love" value="LV" />
+                  <input type="radio" name="subject" id="love" value="LV" />
                   <label for="love">
                     <span>연애</span>
                   </label>
-                  <input type="radio" name="money" id="money" value="MN" />
+                  <input type="radio" name="subject" id="money" value="MN" />
                   <label for="money">
                     <span>금전</span>
                   </label>
-                  <input type="radio" name="future" id="future" value="FT" />
+                  <input type="radio" name="subject" id="future" value="FT" />
                   <label for="future">
                     <span>미래</span>
                   </label>
@@ -32,7 +32,7 @@
               <div class="page-wr">
                 <p class="title">당신의 질문을 입력하세요</p>
                 <div class="content">
-                  <input type="text" name="Q" id="Q">
+                  <input type="text" name="question" id="question">
                   <input type="submit" name="submit_question" value="제출">
                 </div>
               </div>

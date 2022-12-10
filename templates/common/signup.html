@@ -6,7 +6,7 @@
   </head>
   <body>
     <div id="wrap" class="vh100">
-      <form action="{% url 'question' %}" method="POST" name="signup_form" id="signup_form">
+      <form action="{% url 'question_form' %}" method="POST" name="signup_form" id="signup_form">
         {% csrf_token %}
         {% include "form_errors.html" %}
         <div class="signup-page">
