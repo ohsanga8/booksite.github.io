@@ -1,4 +1,5 @@
 from django.db import models
+from common.models import User
 from django.utils import timezone
 
 #폼 모델

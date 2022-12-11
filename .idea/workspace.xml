@@ -3,17 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="80710e33-4e0c-47c7-944b-e04d3d9da397" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_uploader.py" beforeDir="false" afterPath="$PROJECT_DIR$/db_uploader.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/door/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/door/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/door/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/door/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/door/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/door/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/door/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/door/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/door/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/common/signup.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/common/signup.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/door/answer.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/door/answer.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/door/answer_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/door/answer_list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/door/question.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/door/question.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,11 +70,6 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/common/views.py</url>
-          <line>11</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/config/settings.py</url>
           <line>22</line>
