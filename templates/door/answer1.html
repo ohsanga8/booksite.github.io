@@ -70,6 +70,7 @@
              }
           }
 
+
     </style>
     <title>answer</title>
   </head>
@@ -77,7 +78,7 @@
     <div class="jb-wrap">
       <div class="jb-image"><img src={% static '답변1.png' %}></div>
         <div class="jb-text">
-          <div class="answer">{{ answer.content }}</div>
+          <div class="answer"><st>{{ answer.content }}</st></div>
         </div>
       <a href="{% url 'question_subject' %}" class="button"><img src={% static '버튼_.png' %}></a>
   </body>

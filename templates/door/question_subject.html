@@ -39,9 +39,19 @@
         position: absolute;
         border: "0";
         top:1000px;
-        left:900px;
+        left:780px;
         background: none;
         }
+
+        .logout{
+        cursor:pointer;
+        position: absolute;
+        border: "0";
+        top:998px;
+        left:1020px;
+        background: none;
+        }
+
       </style>
     <title>운명의 문</title>
   </head>
@@ -50,6 +60,7 @@
     <a href="{% url 'question_love' %}" class="lv"><img src={% static '연애.png' %}></a>
     <a href="{% url 'question_money' %}" class="mn"><img src={% static '금전.png' %}></a>
     <a href="{% url 'question_future' %}" class="ft"><img src={% static '진로.png' %}></a>
-    <a href="{% url 'answers' %}" class="su"><img src={% static '이전.png' %}></a>
+    <a href="{% url 'answers' %}" class="su"><img src={% static '이전.png' %} height=30px></a>
+    <a href="{% url 'start' %}" class="logout"><img src={% static '로그아웃.png' %} height=35px></a>
   </body>
 </html>

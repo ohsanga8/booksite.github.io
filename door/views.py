@@ -2,6 +2,7 @@ from django.shortcuts import render, redirect, get_object_or_404
 from django.http import HttpResponse
 import random
 from django.utils import timezone
+from django.contrib.auth.models import User
 
 import os
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "config.settings")
@@ -68,6 +69,7 @@ def question_future(request):
     return render(request, 'door/question_future.html')
 
 def answer_create(request, question_id):
+    user = request.user
     question = get_object_or_404(Question, pk=question_id) #question 불러오기
     if question.subject == '연애':
         random_answer = AnswerLove.objects.get(id=random.randrange(1, 170))  # 숫자바꿔
@@ -75,7 +77,7 @@ def answer_create(request, question_id):
         random_answer = AnswerMoney.objects.get(id=random.randrange(1, 184))
     elif question.subject == '진로':
         random_answer = AnswerFuture.objects.get(id=random.randrange(1, 202))
-    answer = Answer(question=question, content=random_answer.content, create_date=timezone.now())
+    answer = Answer(user=user, question=question, content=random_answer.content, create_date=timezone.now())
     answer.save()
     return redirect('answer', answer_id=answer.id)
 
@@ -90,9 +92,11 @@ def answer(request, answer_id):
     elif answer.question.subject == '진로':
         return render(request, 'door/answer3.html', context)
 
-
 #이전 문답
+
+
 def answers(request):
     answer_list = Answer.objects.order_by('-create_date')
-    context = {'answer_list': answer_list}
+    answer_filter = answer_list.filter(user_id=request.user.id)
+    context = {'answer_filter': answer_filter}
     return render(request, 'door/answer_list.html', context)

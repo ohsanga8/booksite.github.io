@@ -63,14 +63,14 @@
   </head>
   <body>
     <img src={% static '_로그인.png' %}>
-    <form action="{% url 'login' %}" method="post" name="login_form" id="login_form">
+    <form action="{% url 'login' %}" method="POST">
       {% csrf_token %}
       {% include "form_errors.html" %}
       <div class="text">
         <input type="text" name="username" id="username" class="username" value="{{ form.username.value|default_if_none:'' }}"><br><br><br><br><br>
         <input type="password" name="password" id="password" class="password" value="{{ form.username.value|default_if_none:'' }}"><br>
       </div>
-      <input type="submit" name="submit_password" value="submit" id="submit">
+      <button type="submit" value="submit" id="submit"></button>
       <label for="submit" class="next"><img src={% static '버튼.png' %} width=120px></label>
     </form>
   </body>

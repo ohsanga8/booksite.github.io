@@ -37,6 +37,8 @@
             width: 500px;
             height: 500px;
           }
+
+
     </style>
     <title>이전 문답</title>
   </head>
@@ -45,20 +47,20 @@
               <div class="jb-image"><img src={% static '문답_내역.png' %} alt=""></div>
               <div class="page-wr on">
                 <div class="answer_list">
-                  {% if answer_list %}
+                  {% if answer_filter %}
                     <ul>
-                      {% for answer in answer_list %}
+                      {% for answer in answer_filter %}
                       <div>
-                        <div>[ {{ answer.question.subject }} ]</div>
-                        <div>{{ answer.question.question }}</div>
-                        <div>{{ answer.content }}</div>
-                        <div>{{ answer.create_date }}</div>
+                        <div><strong>[ {{ answer.question.subject }} ]</strong></div>
+                        <div>Q. {{ answer.question.question }}</div>
+                        <div>A. {{ answer.content }}</div>
+                        <div>({{ answer.create_date }})</div>
                         <br>
                       </div>
                       {% endfor %}
                     </ul>
                   {% else %}
-                     <p class = "nd">운명의 문에 질문을 던져 보세요.</p>
+                     <p class = "nd">ㅤㅤ운명의 문에 질문을 던져 보세요.</p>
                   {% endif %}
                 </div>
               </div>
