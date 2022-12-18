@@ -1,30 +1,77 @@
+{% load static %}
 <!DOCTYPE html>
+
 <html>
   <head>
     <meta charset="utf-8">
+    <style>
+    img{
+    position:relative;
+   }
+
+    .text{
+    position: absolute;
+    top:590px;
+    left:950px;
+    }
+     .next{
+    position: absolute;
+    border: "0";
+    top:780px;
+    left:910px;
+    background: none;
+     animation: fadein 3s;
+    -moz-animation: fadein 3s;
+    -webkit-animation: fadein 3s;
+    -o-animation: fadein 3s;
+    }
+
+        @keyframes fadein {
+        from {
+        opacity:0;
+        }
+        to {
+        opacity:1;
+        }
+        }
+        @-moz-keyframes fadein {
+         from {
+            opacity:0;
+        }
+        to {
+            opacity:1;
+           }
+        }
+        @-webkit-keyframes fadein {
+         from {
+             opacity:0;
+              }
+          to {
+             opacity:1;
+             }
+          }
+         @-o-keyframes fadein {
+         from {
+             opacity:0;
+              }
+          to {
+             opacity:1;
+             }
+          }
+    </style>
     <title>로그인</title>
   </head>
   <body>
-    <div id="wrap" class="vh100">
-      <form action="{% url 'login' %}" method="post" name="login_form" id="login_form">
-        {% csrf_token %}
-        {% include "form_errors.html" %}
-        <div class="login-page">
-          <div class="page-wr on">
-            <p class="title">당신의 이름은?</p>
-            <div class="login">
-                <input type="text" name="username" id="username">
-            </div>
-          </div>
-          <div class="page-wr">
-            <p class="title">비밀번호를 입력하세요.</p>
-            <div class="login">
-                <input type="password" name="password" id="password">
-                <input type="submit" name="submit_password" value="submit">
-            </div>
-          </div>
-        </div>
-      </form>
-    </div>
+    <img src={% static '_로그인.png' %}>
+    <form action="{% url 'login' %}" method="post" name="login_form" id="login_form">
+      {% csrf_token %}
+      {% include "form_errors.html" %}
+      <div class="text">
+        <input type="text" name="username" id="username" class="username" value="{{ form.username.value|default_if_none:'' }}"><br><br><br><br><br>
+        <input type="password" name="password" id="password" class="password" value="{{ form.username.value|default_if_none:'' }}"><br>
+      </div>
+      <input type="submit" name="submit_password" value="submit" id="submit">
+      <label for="submit" class="next"><img src={% static '버튼.png' %} width=120px></label>
+    </form>
   </body>
 </html>

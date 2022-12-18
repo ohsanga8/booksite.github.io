@@ -2,9 +2,33 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="80710e33-4e0c-47c7-944b-e04d3d9da397" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/templates/door/answer2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/door/answer3.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/door/question_future.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/door/question_love.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/door/question_money.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/door/question_subject.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/answer_data.csv" beforeDir="false" afterPath="$PROJECT_DIR$/answer_data.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db_uploader.py" beforeDir="false" afterPath="$PROJECT_DIR$/db_uploader.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/door/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/door/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/door/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/door/migrations/0002_answerfuture_answerlove_answermoney_questionform_and_more.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/door/migrations/0003_alter_questionform_question.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/door/migrations/0004_rename_questionform_question.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/door/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/door/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/door/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/door/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/door/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/door/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/common/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/common/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/common/signup.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/common/signup.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/door/answer.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/door/answer1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/door/answer_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/door/answer_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/door/question.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/door/start.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/door/start.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,6 +39,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -36,13 +61,22 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/USER/OneDrive/바탕 화면/과제하는중/book/templates/door&quot;
   }
 }</component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\USER\OneDrive\바탕 화면\과제하는중\book\templates\door" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\USER\OneDrive\바탕 화면\과제하는중\book\templates" />
+      <recent name="C:\Users\USER\OneDrive\바탕 화면\과제하는중\book\static\image" />
+      <recent name="C:\Users\USER\OneDrive\바탕 화면\과제하는중\book\door\static" />
+      <recent name="C:\Users\USER\OneDrive\바탕 화면\과제하는중\book\door\static\image" />
+      <recent name="C:\Users\USER\OneDrive\바탕 화면\과제하는중\book\common\static" />
+      <recent name="C:\Users\USER\OneDrive\바탕 화면\과제하는중\book\door" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -71,24 +105,9 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/config/settings.py</url>
-          <line>22</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/door/views.py</url>
-          <line>31</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/door/views.py</url>
-          <line>16</line>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/door/views.py</url>
-          <line>44</line>
-          <option name="timeStamp" value="9" />
+          <url>file://$PROJECT_DIR$/common/views.py</url>
+          <line>19</line>
+          <option name="timeStamp" value="10" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

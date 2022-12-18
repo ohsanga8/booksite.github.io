@@ -16,15 +16,15 @@ with open(CSV_PATH_ANSWER_DATA, 'rt', encoding='UTF8') as in_file:
         if row[0]:
             subject_data = row[0]
         content_data = row[1]
-        if subject_data == 'LV':
+        if subject_data == '연애':
             AnswerLove.objects.create(
                 content = content_data,
             )
-        elif subject_data == 'MN':
+        elif subject_data == '금전':
             AnswerMoney.objects.create(
                 content = content_data,
             )
-        elif subject_data == 'FT':
+        elif subject_data == '진로':
             AnswerFuture.objects.create(
                 content = content_data,
             )

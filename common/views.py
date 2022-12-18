@@ -2,7 +2,8 @@ from django.shortcuts import render, redirect
 from django.contrib import auth
 from django.contrib.auth import authenticate, login
 from django.contrib.auth import views as auth_view
-from common.forms import UserForm, CustomAuthenticationForm
+from common.forms import CustomAuthenticationForm
+from .forms import UserForm
 
 #회원가입
 def signup(request):

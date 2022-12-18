@@ -1,0 +1,74 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <title>운명의 문</title>
+    <style>
+    img{
+    position:relative;
+   }
+   .next{
+    position: absolute;
+    border: "0";
+    top:680px;
+    left:880px;
+    background: none;
+    animation: fadein 3s;
+    -moz-animation: fadein 3s;
+    -webkit-animation: fadein 3s;
+    -o-animation: fadein 3s;
+    }
+    .text{
+    position: absolute;
+    top:580px;
+    left:880px;
+    }
+   @keyframes fadein {
+        from {
+        opacity:0;
+        }
+        to {
+        opacity:1;
+        }
+        }
+        @-moz-keyframes fadein {
+         from {
+            opacity:0;
+        }
+        to {
+            opacity:1;
+           }
+        }
+        @-webkit-keyframes fadein {
+         from {
+             opacity:0;
+              }
+          to {
+             opacity:1;
+             }
+          }
+         @-o-keyframes fadein {
+         from {
+             opacity:0;
+              }
+          to {
+             opacity:1;
+             }
+          }
+  </style>
+  </head>
+  <body>
+   <img src={% static '질문.png' %}>
+
+  <form action="{% url 'question_money' %}" method="post" id="question_money">
+    {% csrf_token %}
+    <input type="text" name="question" id="question" class="text">
+    <br>
+    <input type="submit" id="submit" value="submit" class="next">
+    <label for="submit" class="next">
+      <img src={% static '버튼.png' %}>
+    </label>
+  </form>
+  </body>
+</html>

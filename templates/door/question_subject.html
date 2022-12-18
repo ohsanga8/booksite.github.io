@@ -1,0 +1,55 @@
+{% load static %}
+<!doctype html>
+<html lang="ko">
+  <head>
+     <meta charset="utf-8">
+      <style>
+        img{
+        position:relative;
+       }
+        .lv{
+        cursor:pointer;
+        position: absolute;
+        border: "0";
+        top:600px;
+        left:925px;
+        background: none;
+        }
+
+        .mn{
+        cursor:pointer;
+        position: absolute;
+        border: "0";
+        top:700px;
+        left:925px;
+        background: none;
+        }
+
+        .ft{
+        cursor:pointer;
+        position: absolute;
+        border: "0";
+        top:800px;
+        left:925px;
+        background: none;
+        }
+
+        .su{
+        cursor:pointer;
+        position: absolute;
+        border: "0";
+        top:1000px;
+        left:900px;
+        background: none;
+        }
+      </style>
+    <title>운명의 문</title>
+  </head>
+  <body>
+    <img src={% static '카테고리.png' %} alt="bg">
+    <a href="{% url 'question_love' %}" class="lv"><img src={% static '연애.png' %}></a>
+    <a href="{% url 'question_money' %}" class="mn"><img src={% static '금전.png' %}></a>
+    <a href="{% url 'question_future' %}" class="ft"><img src={% static '진로.png' %}></a>
+    <a href="{% url 'answers' %}" class="su"><img src={% static '이전.png' %}></a>
+  </body>
+</html>

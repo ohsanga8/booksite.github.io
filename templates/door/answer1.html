@@ -1,0 +1,84 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <style>
+    .jb-wrap {
+    				width: 100%;
+    				margin: 10px auto;
+    				border: 1px solid #000000;
+    			}
+    			.jb-wrap img {
+    				width: 100%;
+    				vertical-align: middle;
+    			}
+    			.jb-text {
+    				padding: 5px 10px;
+                    color: rgb(200, 158, 35);
+                    font-size: 50px;
+    				text-align: center;
+            position: absolute;
+            top: 55%;
+            left: 50%;
+            transform: translate( -50%, -50% );
+          }
+
+
+    .button{
+    width: 8%;
+    position: absolute;
+    border: "0";
+    top:750px;
+    left:1400px;
+    background: none;
+    animation: fadein 3s;
+    -moz-animation: fadein 3s;
+    -webkit-animation: fadein 3s;
+    -o-animation: fadein 3s;
+    }
+            @keyframes fadein {
+        from {
+        opacity:0;
+        }
+        to {
+        opacity:1;
+        }
+        }
+        @-moz-keyframes fadein {
+         from {
+            opacity:0;
+        }
+        to {
+            opacity:1;
+           }
+        }
+        @-webkit-keyframes fadein {
+         from {
+             opacity:0;
+              }
+          to {
+             opacity:1;
+             }
+          }
+         @-o-keyframes fadein {
+         from {
+             opacity:0;
+              }
+          to {
+             opacity:1;
+             }
+          }
+
+    </style>
+    <title>answer</title>
+  </head>
+  <body>
+    <div class="jb-wrap">
+      <div class="jb-image"><img src={% static '답변1.png' %}></div>
+        <div class="jb-text">
+          <div class="answer">{{ answer.content }}</div>
+        </div>
+      <a href="{% url 'question_subject' %}" class="button"><img src={% static '버튼_.png' %}></a>
+  </body>
+</html>

@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+     <meta charset="utf-8">
+      <style>
+        img{
+        position:relative;
+       }
+
+        button.lv{
+        position: absolute; 
+        border: "0"; 
+        top:600px;
+        left:925px;
+        background: none;
+        }
+
+        button.mn{
+        position: absolute; 
+        border: "0"; 
+        top:700px;
+        left:925px;
+        background: none;
+        }
+        
+        button.cs{
+        position: absolute; 
+        border: "0"; 
+        top:800px;
+        left:925px;
+        background: none;
+        }
+        button.su{
+        position: absolute; 
+        border: "0"; 
+        top:1000px;
+        left:900px;
+        background: none;
+        }
+      </style>
+    <title>운명의 문</title>
+  </head>
+  <body>
+    <img src="C:\Users\osp\카테고리.png" alt="bg">
+    <form action="{% url 'question_form' %}" method="post" name="question_form" id="question_form">
+        <button type="button" class="lv" onclick="window.open('연애질문.html')" id="img_btn">
+                <img  src="C:\Users\osp\연애.png" alt="버튼">
+        </button>
+
+        <button type="button" class="mn"onclick="window.open('금전질문.html')" id="img_btn">
+          <img  src="C:\Users\osp\금전.png" alt="버튼">
+        </button>
+        <button type="button" class="cs" onclick="window.open('진로질문.html')"id="img_btn">
+          <img  src="C:\Users\osp\진로.png" alt="버튼">
+          <button type="button" class="su" onclick="window.open('문답내역.html')" id="img_btn">
+            <img  src="C:\Users\osp\이전.png" alt="버튼">
+        </button>
+        </button>
+    </form>
+  </body>
+</html>

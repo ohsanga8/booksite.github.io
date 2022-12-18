@@ -1,19 +1,79 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="ko">
   <head>
     <meta charset="utf-8">
+      <style>
+        img{
+        position:relative;
+       }
+
+        .next{
+        position: absolute;
+        border: "0";
+        top:550px;
+        left:880px;
+        background: none;
+        animation: fadein 3s;
+        -moz-animation: fadein 3s;
+        -webkit-animation: fadein 3s;
+        -o-animation: fadein 3s;
+        }
+
+        .st{
+        position: absolute;
+        border: "0";
+        top:800px;
+        left:925px;
+        background: none;
+        }
+        .su{
+        position: absolute;
+        border: "0";
+        top:1000px;
+        left:900px;
+        background: none;
+        }
+                @keyframes fadein {
+        from {
+        opacity:0;
+        }
+        to {
+        opacity:1;
+        }
+        }
+        @-moz-keyframes fadein {
+         from {
+            opacity:0;
+        }
+        to {
+            opacity:1;
+           }
+        }
+        @-webkit-keyframes fadein {
+         from {
+             opacity:0;
+              }
+          to {
+             opacity:1;
+             }
+          }
+         @-o-keyframes fadein {
+         from {
+             opacity:0;
+              }
+          to {
+             opacity:1;
+             }
+          }
+      </style>
     <title>운명의 문</title>
   </head>
   <body>
-      <div id="wrap" class="vh100">
-          <div id="header">
-          </div>
-
-          <div id="intro-page" class="on">
-            <p class="title">운명의 문</p>
-          </div>
-          <a href="{% url 'login' %}">시작하기</a>
-          <a href="{% url 'signup' %}">처음 오셨나요?</a>
-      </div>
+        <img src={% static '홈.png' %} alt="bg">
+            <a href="{% url 'login' %}" class="next"><img  src={% static '버튼.png' %} alt="버튼"></a>
+            <a href="{% url 'login' %}" class="st"><img src={% static '시작.png' %} alt="버튼"></a>
+            <a href="{% url 'signup' %}" class="su"><img src={% static '처음.png' %} alt="버튼"></a>
+    </div>
   </body>
 </html>
