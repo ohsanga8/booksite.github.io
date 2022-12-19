@@ -4,12 +4,9 @@
     <list default="true" id="80710e33-4e0c-47c7-944b-e04d3d9da397" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/common/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/common/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/common/signup.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/common/signup.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/door/answer_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/door/answer_list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/door/question_future.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/door/question_future.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/door/question_love.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/door/question_love.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/door/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/door/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/door/question_money.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/door/question_money.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/door/start.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/door/start.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,14 +37,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/USER/OneDrive/바탕 화면/과제하는중/book/templates/door&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Users/USER/OneDrive/바탕 화면/3분반_4조_이다원 1차 제출 파일/book",
+    "settings.editor.selected.configurable": "preferences.lookFeel"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\USER\OneDrive\바탕 화면\과제하는중\book\templates\door" />
